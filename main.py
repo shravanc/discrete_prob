@@ -5,8 +5,8 @@ from sklearn.naive_bayes import MultinomialNB
 import numpy as np
 
 
-X = np.array([ ['a'], ['a'], ['n'], ['n'], ['s'], [2]] )
-y = np.array([ 1, 1, 0, 1, 1, 1 ]) 
+X = np.array([ ['a'], ['a'], ['n'] ] )
+y = np.array([ 1, 1, 0]) 
 
 lb = preprocessing.LabelBinarizer()
 lb.fit(X)

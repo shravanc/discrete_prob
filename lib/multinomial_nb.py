@@ -2,7 +2,7 @@ import numpy as np
 
 class MyMultinomialNB:
 
-    def compute(self, d1):
+    def compute_prob(self, d1):
 
         p1 = d1["f_mle"] * self.f_mle
         p2 = d1["m_mle"] * self.m_mle
@@ -81,7 +81,7 @@ class MyMultinomialNB:
             except:
                 d1["f_mle"] = 0
 
-            self.compute(d1)
+            self.compute_prob(d1)
             self.data.append(d1)
 
 

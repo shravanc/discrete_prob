@@ -3,8 +3,8 @@ import numpy as np
 from lib.multinomial_nb import MyMultinomialNB
 
 
-x = np.array([ 'a', 'a', 'n', 'n', 's', 's'])
-y = np.array([ 1, 1, 0, 1, 1, 1])
+x = np.array([ 'a', 'a', 'n'])
+y = np.array([ 1, 1, 0])
 
 
 nb = MyMultinomialNB()
